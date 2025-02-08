@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fitness Tracker - Goal Setter</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Goal Setter</h1>
+            <form id="goal-form">
+                <label for="bodyfat">What body fat percentage do you want to achieve?</label>
+                <select id="bodyfat" name="bodyfat">
+                    <option value="5%">5% (Athlete)</option>
+                    <option value="10%">10% (Fitness)</option>
+                    <option value="15%">15% (Average)</option>
+                    <option value="20%">20% (Overweight)</option>
+                    <option value="25%">25% (Obese)</option>
+                    <option value="30%">30% (Severely Obese)</option>
+                    <option value="35%">35% (Morbidly Obese)</option>
+                    <option value="40%">40% (Extremely Obese)</option>
+                </select>
+                <div class="sample-photos">
+                    <img src="5percent.jpg" alt="5% body fat">
+                    <img src="10percent.jpg" alt="10% body fat">
+                    <img src="15percent.jpg" alt="15% body fat">
+                    <!-- Add more photos here -->
+                </div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="start-weight">Start Weight (kg):</label>
+                <input type="number" id="start-weight" name="start-weight">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="goal-weight">Goal Weight (kg):</label>
+                <input type="number" id="goal-weight" name="goal-weight">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
+                <button id="submit-btn">Submit</button>
+            </form>
+            <div id="goal-guidelines">
+                <h2>Goal Weight Guidelines</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Height (cm)</th>
+                            <th>Male (kg)</th>
+                            <th>Female (kg)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>150-159</td>
+                            <td>50-60</td>
+                            <td>45-55</td>
+                        </tr>
+                        <tr>
+                            <td>160-169</td>
+                            <td>55-65</td>
+                            <td>50-60</td>
+                        </tr>
+                        <tr>
+                            <td>170-179</td>
+                            <td>60-70</td>
+                            <td>55-65</td>
+                        </tr>
+                        <!-- Add more rows here -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="goal-summary">
+                <h2>Goal Summary</h2>
+                <p id="start-date"></p>
+                <p id="goal-date"></p>
+                <p id="days-to-go"></p>
+                <p id="total-weight-lost"></p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+    </html>
